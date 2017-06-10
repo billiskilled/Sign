@@ -1,0 +1,47 @@
+/*
+*登录页面的页面布局样式
+*/
+
+/*部分初始化页面布局*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul,li,p{ padding:0; margin:0;list-style:none} 
+
+/*设置网页标签样式*/
+body {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+p {
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+/*设置第一个分区（logo分区）的样式*/
+#logo {
+    margin: 0 auto 40px;
+}
+
+#logo img {
+    margin-bottom: 40px;
+}
+
+/*设置第二个分区（填写用户名和密码区）的样式*/
+#sign_in {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#sign_in input {
+    margin: 0 auto;
+    display: block;
+}
+
+#sign_in input:focus {
+    background-color: yellow;
+}
