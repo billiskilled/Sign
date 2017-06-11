@@ -37,7 +37,7 @@ p {
 }
 
 /*设置第二个分区（填写用户名和密码区）的样式*/
-#sign_in {
+#sign_in,#sign_up {
     width: 300px;
     height: 300px;
     margin: 0 auto 30px;
@@ -83,7 +83,7 @@ p {
 }
 
 /*设置第三个分区（注册分区）的样式*/
-#register {
+#register,#login {
     width: 300px;
     margin: 0 auto 40px;
 }
@@ -91,6 +91,11 @@ p {
 #register p {
     display: inline-block;
     margin-left: 60px;
+}
+
+#login p {
+    display: inline-block;
+    margin-left: 80px;
 }
 
 /*设置第四个分区（底部分区）的样式*/
