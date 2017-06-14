@@ -9,8 +9,7 @@ input,select,textarea {outline: none;
     background: none;}
 textarea {resize: none;}
 a {text-decoration: none;color: #656565;}
-input {
-    border: none;}
+
 /*清除浮动*/
 .clearfix:after {content: "";display: block;clear: both;}
 .clearfix {zoom: 1;}
