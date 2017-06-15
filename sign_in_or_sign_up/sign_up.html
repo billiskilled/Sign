@@ -2,14 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <link rel="stylesheet" href="../styles/layout_sign.css" type="text/css">
     <title>注册</title>
 </head>
 
 <body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LOGO</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">首 页<span class="sr-only">(current)</span></a></li>
+                <li><a href="../sign_in_or_sign_up/sign_in.html">登 录</a></li>
+                <li class="active"><a href="#">注 册</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../ds/index.html">电商首页</a></li>
+                        <li><a href="../ds/product_category.html">电商产品分类</a></li>
+                        <li><a href="../ds/product_introduce.html">电商产品介绍</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../ds/filter.html">电商筛选</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../ds/shopping_cart.html">电商购物车</a></li>
+                        <li><a href="../ds/sign_in.html">电商登录</a></li>
+                        <li><a href="../ds/sign_up.html">电商注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
     <div id="logo">
         <img src="../images/logo.png" alt="LOGO图片">
         <p><strong>欢迎注册</strong><em>垃圾网</em></p>
@@ -19,7 +70,7 @@
             <label for="username">用户名或者注册邮箱：</label>
             <input type="text" id="username" name="username">
             <label for="password">密码：</label>
-            <a href="forget_password.html">忘记密码？</a>
+            <a href="#">忘记密码？</a>
             <input type="password" id="password" name="password">
             <input type="submit" value="注  册" name="submit" id="submit">
         </form>
@@ -34,6 +85,12 @@
         <a href="#">安全</a>
         <a href="#">联系我们</a>
     </div>
+
+<!--导入Bootstrap-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../scripts/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
