@@ -8,13 +8,7 @@ body {
     padding: 0;
 }
 
-ul,li{ padding:0; margin:0;list-style:none} 
-
-/*页面布局部分设置*/
-/*body {*/
-    /*width: 100%;*/
-    /*margin: 0 auto;*/
-/*}*/
+ul,li{ padding:0; margin:0;list-style:none}
 
 /*登录注册按钮的布局*/
 #sign {
