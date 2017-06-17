@@ -25,7 +25,8 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -41,7 +42,8 @@
                 <li><a href="sign_in_or_sign_up/sign_in.html">登 录</a></li>
                 <li><a href="sign_in_or_sign_up/sign_up.html">注 册</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">电商项目<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">电商项目<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="ds/index.html">电商首页</a></li>
                         <li role="separator" class="divider"></li>
@@ -61,7 +63,7 @@
 </nav>
 
 <!--图片轮播-->
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
     <!-- 轮播（Carousel）指标 -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -89,52 +91,182 @@
     <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
     <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
 </div>
- <!--控制按钮-->
+<!--控制按钮-->
 <!--<div style="text-align:center;">-->
-    <!--<input type="button" class="btn start-slide" value="Start">-->
-    <!--<input type="button" class="btn pause-slide" value="Pause">-->
-    <!--<input type="button" class="btn prev-slide" value="Previous Slide">-->
-    <!--<input type="button" class="btn next-slide" value="Next Slide">-->
-    <!--<input type="button" class="btn slide-one" value="Slide 1">-->
-    <!--<input type="button" class="btn slide-two" value="Slide 2">-->
-    <!--<input type="button" class="btn slide-three" value="Slide 3">-->
+<!--<input type="button" class="btn start-slide" value="Start">-->
+<!--<input type="button" class="btn pause-slide" value="Pause">-->
+<!--<input type="button" class="btn prev-slide" value="Previous Slide">-->
+<!--<input type="button" class="btn next-slide" value="Next Slide">-->
+<!--<input type="button" class="btn slide-one" value="Slide 1">-->
+<!--<input type="button" class="btn slide-two" value="Slide 2">-->
+<!--<input type="button" class="btn slide-three" value="Slide 3">-->
 <!--</div>-->
 <!--<script>-->
-    <!--$(function(){-->
-        <!--// 初始化轮播-->
-        <!--$(".start-slide").click(function(){-->
-            <!--$("#myCarousel").carousel('cycle');-->
-        <!--});-->
-        <!--// 停止轮播-->
-        <!--$(".pause-slide").click(function(){-->
-            <!--$("#myCarousel").carousel('pause');-->
-        <!--});-->
-        <!--// 循环轮播到上一个项目-->
-        <!--$(".prev-slide").click(function(){-->
-            <!--$("#myCarousel").carousel('prev');-->
-        <!--});-->
-        <!--// 循环轮播到下一个项目-->
-        <!--$(".next-slide").click(function(){-->
-            <!--$("#myCarousel").carousel('next');-->
-        <!--});-->
-        <!--// 循环轮播到某个特定的帧-->
-        <!--$(".slide-one").click(function(){-->
-            <!--$("#myCarousel").carousel(0);-->
-        <!--});-->
-        <!--$(".slide-two").click(function(){-->
-            <!--$("#myCarousel").carousel(1);-->
-        <!--});-->
-        <!--$(".slide-three").click(function(){-->
-            <!--$("#myCarousel").carousel(2);-->
-        <!--});-->
-    <!--});-->
+<!--$(function(){-->
+<!--// 初始化轮播-->
+<!--$(".start-slide").click(function(){-->
+<!--$("#myCarousel").carousel('cycle');-->
+<!--});-->
+<!--// 停止轮播-->
+<!--$(".pause-slide").click(function(){-->
+<!--$("#myCarousel").carousel('pause');-->
+<!--});-->
+<!--// 循环轮播到上一个项目-->
+<!--$(".prev-slide").click(function(){-->
+<!--$("#myCarousel").carousel('prev');-->
+<!--});-->
+<!--// 循环轮播到下一个项目-->
+<!--$(".next-slide").click(function(){-->
+<!--$("#myCarousel").carousel('next');-->
+<!--});-->
+<!--// 循环轮播到某个特定的帧-->
+<!--$(".slide-one").click(function(){-->
+<!--$("#myCarousel").carousel(0);-->
+<!--});-->
+<!--$(".slide-two").click(function(){-->
+<!--$("#myCarousel").carousel(1);-->
+<!--});-->
+<!--$(".slide-three").click(function(){-->
+<!--$("#myCarousel").carousel(2);-->
+<!--});-->
+<!--});-->
 <!--</script>-->
+
+<!--标签页-->
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active">
+        <a href="#home" data-toggle="tab">简介</a>
+    </li>
+    <li><a href="#ios" data-toggle="tab">籍贯</a></li>
+    <li class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+           data-toggle="dropdown">爱好 <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">
+                写代码</a>
+            </li>
+            <li><a href="#ejb" tabindex="-1" data-toggle="tab">
+                看书</a>
+            </li>
+            <li><a href="#shoot" tabindex="-1" data-toggle="tab">
+                摄影</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+        <p>西安电子科技大学本科毕业的程序员一枚。</p>
+    </div>
+    <div class="tab-pane fade" id="ios">
+        <p>山东省临沂市人也。</p>
+        <p>山东省临沂市人也。</p>
+        <p>山东省临沂市人也。</p>
+        <p>山东省临沂市人也。</p>
+        <p>山东省临沂市人也。</p>
+        <p>山东省临沂市人也。</p>
+        <p>山东省临沂市人也。</p>
+    </div>
+    <div class="tab-pane fade" id="jmeter">
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+        <p>没事写代码，岂不快哉？</p>
+    </div>
+    <div class="tab-pane fade" id="ejb">
+        <p>人生百味，书中品味。</p>
+        <p>人生百味，书中品味。</p>
+        <p>人生百味，书中品味。</p>
+        <p>人生百味，书中品味。</p>
+        <p>人生百味，书中品味。</p>
+        <p>人生百味，书中品味。</p>
+        <p>人生百味，书中品味。</p>
+    </div>
+    <div class="tab-pane fade" id="shoot">
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+        <p>定格你的我的，我的你的。</p>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#myTab li:eq(1) a').tab('show');
+    });
+</script>
+
+<!--页脚-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <h6>Copyright &copy;新浪体育</h6>
+            </div>
+            <div class="col-sm-4">
+                <h6>关于我们</h6>
+                <p>
+                    中国上海/2014年8月14日 — 服务于中国及全球华人社群的领先在线媒体公司新浪公司(NASDAQ GS: SINA)今日公布了截至2014年6月30日的第二季度未经审计的财务报告。
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h6>导航</h6>
+                <ul class="unstyled">
+                    <li><a href="">主页</a></li>
+                    <li><a href="">服务</a></li>
+                    <li><a href="">链接</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h6>Follow us</h6>
+                <ul class="unstyled">
+                    <li><a href="">微博</a></li>
+                    <li><a href="">微信</a></li>
+                    <li><a href="">来往</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h6>本网站由<span class="glyphicon glyphicon-heart"></span>Darren制作</h6>
+            </div>
+        </div>
+    </div>
+</footer><!--页脚结束-->
+
 
 <!--导入Bootstrap-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="scripts/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $('#myCarousel').carousel({
+            interval: 2000
+        });
+    });
+</script>
 </body>
 </html>
 
