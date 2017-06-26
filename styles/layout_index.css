@@ -4,31 +4,31 @@
 
 /*部分初始化页面布局*/
 /*body {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
+/*margin: 0;*/
+/*padding: 0;*/
 /*}*/
 
 /*ul,li{ padding:0; margin:0;list-style:none}*/
 
 /*!*登录注册按钮的布局*!*/
 /*#sign {*/
-    /*float: right;*/
-    /*text-shadow: 3px 3px 1px red;*/
+/*float: right;*/
+/*text-shadow: 3px 3px 1px red;*/
 /*}*/
 
 /*!*导航栏布局*!*/
 /*nav {*/
-    /*float: left;*/
-    /*font-size: 22px;*/
+/*float: left;*/
+/*font-size: 22px;*/
 /*}*/
 
 /*nav ul li {*/
-    /*display: inline-block;*/
-    /*margin: 0px 30px;*/
+/*display: inline-block;*/
+/*margin: 0px 30px;*/
 /*}*/
 
 /*nav ul li a {*/
-    /*text-decoration: none;*/
+/*text-decoration: none;*/
 /*}*/
 
 #myCarousel {
@@ -36,8 +36,8 @@
 }
 
 .carousel img {
-    min-height: 500px;
-    width: 80%;
+    max-height: 500px;
+    width: 100%;
 }
 
 #myTabContent div {
@@ -47,7 +47,7 @@
 
 /*页脚*/
 footer {
-    background: #333;
+    background-color: #333;
     color: #eee;
     font-size: 11px;
     padding: 20px;
